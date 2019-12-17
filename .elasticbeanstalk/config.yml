@@ -1,6 +1,6 @@
 branch-defaults:
   master:
-    environment: null
+    environment: SampleWebapp-env
     group_suffix: null
 deploy:
   artifact: ../nodejs-v1.zip
