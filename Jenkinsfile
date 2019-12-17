@@ -35,7 +35,7 @@ pipeline {
         stage('Deploy code to elasticbeanstalk') {
         steps {
         sh '''
-	    eb deploy --staged
+	    eb deploy $ENV --staged
            '''
         }
         }
