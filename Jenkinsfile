@@ -9,8 +9,8 @@ pipeline {
             steps {
                      checkout scm
                 sh '''
-		  cd ..
-		  zip --exclude '*.git*' -r nodejs-v1.zip samplenodejs-ebs
+		  zip --exclude '*.git*' -r nodejs-v1.zip *
+                  mv nodejs-v1.zip ../
                 '''
             }
 
