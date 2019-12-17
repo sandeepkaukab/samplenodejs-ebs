@@ -36,7 +36,7 @@ pipeline {
         steps {
         sh '''
 	    eb deploy $ENV --staged
-	    eb health
+	    eb health $ENV
            '''
         }
         }
